@@ -12,8 +12,8 @@
   });
 
   close.addEventListener('click', function() {
-    modal.className = 'hidden';
-    mask.className = 'hidden';
+    modal.className = 'hidden'; // 非表示
+    mask.className = 'hidden';  //非表示
   });
 
   mask.addEventListener('click', function() {

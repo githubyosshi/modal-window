@@ -22,6 +22,7 @@ body {
   bottom: 0;
   right: 0;
   left: 0;
+  z-index: 1; /* 要素の重なり順が一番下 */
 }
 
 #modal {
@@ -34,6 +35,8 @@ body {
   left: 0;
   right: 0;
   margin: 0 auto;
+  transition: .8s;  /* アニメーション */
+  z-index: 2;
 }
 
 #modal p {
@@ -46,5 +49,5 @@ body {
 }
 
 #modal.hidden {
-  transform: translate(0, -500px);
+  transform: translate(0, -500px);  /* 要素の表示位置移動 */
 }
